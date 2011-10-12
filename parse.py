@@ -32,9 +32,12 @@ for line in data:
 print 'finished reading file'
 print len(tags_list)
 new_tags_list = []
+linecount = 0
 for tag in tags_list:
+  linecount=linecount+1
+  print linecount
   if tag not in new_tags_list:
     new_tags_list.append(tag)
     
 print len(new_tags_list)
-print new_tags_list
+print ", ".join(new_tags_list)
