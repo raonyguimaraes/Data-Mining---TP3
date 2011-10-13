@@ -11,6 +11,7 @@ from prettytable import PrettyTable
 from nltk.metrics.distance import jaccard_distance, masi_distance
 
 DISTANCE_THRESHOLD = 0.34
+#DISTANCE_THRESHOLD = 0.34
 DISTANCE = masi_distance
 
 def clean_string(string):
@@ -24,7 +25,7 @@ def clean_string(string):
   
   return clean_string.strip()
 
-data_file = open('tags.txt', 'rb')
+data_file = open('tags_1000.txt', 'rb')
 data = data_file.readlines()
 
 fdist = nltk.FreqDist()
@@ -33,7 +34,11 @@ all_tags = []
 musics = []
 for line in data:
   line = clean_string(line).split(',')
-  musics.append(line)
+  new_music_line = []
+  for music_tag in line:
+    if music_tag not in new_music_line:
+      new_music_line.append(music_tag)
+  musics.append(new_music_line)
   tags = line
   for tag in tags:
     all_tags.append(tag)
@@ -75,9 +80,16 @@ for tag1 in all_tags:
     if distance < DISTANCE_THRESHOLD:
       clusters[tag1].append(tag2)
 
-print "Clustering Musics"      
+
+
+
 # Flatten out clusters
 clusters = [clusters[tag] for tag in clusters if len(clusters[tag]) > 1]
+
+
+print "Number of clusters for tags:"+str(len(clusters))
+
+print "Clustering Musics"      
 # Round up musics who are in these clusters and group them together
 clustered_musics = {}
 for cluster in clusters:
@@ -87,7 +99,8 @@ for cluster in clusters:
       if tag in cluster:
 	clustered_musics[tuple(cluster)].append('Music nº %s' % (idx))
 
-	
+
+
 print "Printing Clusters"
 #############Printing Cluster Created
 for tags in clustered_musics:
