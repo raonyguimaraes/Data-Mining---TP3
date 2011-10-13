@@ -29,18 +29,18 @@ data = data_file.readlines()
 
 fdist = nltk.FreqDist()
 linecount = 0
-all_tags = []
+tags_list = []
 musics = []
 for line in data:
   line = clean_string(line).split(',')
   musics.append(line)
   tags = line
   for tag in tags:
-    all_tags.append(tag)
+    tags_list.append(tag)
     fdist.inc(tag)
 
 print 'finished reading file'
-print str(len(all_tags))+" tags"
+print str(len(tags_list))+" tags"
 print str(len(musics))+" musics"
 
 #frequency of tag
