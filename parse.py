@@ -16,7 +16,7 @@ from cluster import HierarchicalClustering
 DISTANCE_THRESHOLD = 0.34
 #DISTANCE_THRESHOLD = 0.34
 DISTANCE = jaccard_distance
-SAMPLE_SIZE = 31
+SAMPLE_SIZE = 10
 
 # Define a scoring function
 def score(tag1, tag2):
@@ -33,7 +33,7 @@ def clean_string(string):
   
   return clean_string.strip()
 
-data_file = open('tags_1000.txt', 'rb')
+data_file = open('tags2.txt', 'rb')
 data = data_file.readlines()
 
 fdist = nltk.FreqDist()
@@ -76,19 +76,34 @@ print str(len(musics))+" musics"
 #sort_list = fdist.keys()
 #print sort_list
 
-###############Cluster tags
+###############Cluster tags USING Random
+#print "Clustering Tags"
+#clusters = {}
+#for tag1 in all_tags:
+  #clusters[tag1] = []
+  #for sample in range(SAMPLE_SIZE):
+    #tag2 = all_tags[random.randint(0, len(all_tags)-1)]
+    ##for tag2 in all_tags:
+    #if tag2 in clusters[tag1] or clusters.has_key(tag2) and tag1 in clusters[tag2]:
+      #continue
+    #distance = DISTANCE(set(tag1.split()), set(tag2.split()))
+    #if distance < DISTANCE_THRESHOLD:
+      #clusters[tag1].append(tag2)
+      
+      
+###############Cluster tags NOT USING Random
 print "Clustering Tags"
 clusters = {}
 for tag1 in all_tags:
   clusters[tag1] = []
   for sample in range(SAMPLE_SIZE):
-    tag2 = all_tags[random.randint(0, len(all_tags)-1)]
-    #for tag2 in all_tags:
-    if tag2 in clusters[tag1] or clusters.has_key(tag2) and tag1 in clusters[tag2]:
-      continue
-    distance = DISTANCE(set(tag1.split()), set(tag2.split()))
-    if distance < DISTANCE_THRESHOLD:
-      clusters[tag1].append(tag2)
+    #tag2 = all_tags[random.randint(0, len(all_tags)-1)]
+    for tag2 in all_tags:
+      if tag2 in clusters[tag1] or clusters.has_key(tag2) and tag1 in clusters[tag2]:
+	continue
+      distance = DISTANCE(set(tag1.split()), set(tag2.split()))
+      if distance < DISTANCE_THRESHOLD:
+	clusters[tag1].append(tag2)
 
 #Flatten out clusters
 clusters = [clusters[tag] for tag in clusters if len(clusters[tag]) > 1]
