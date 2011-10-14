@@ -10,9 +10,9 @@ from prettytable import PrettyTable
 
 from nltk.metrics.distance import jaccard_distance, masi_distance
 
-DISTANCE_THRESHOLD = 0.34
+DISTANCE_THRESHOLD = 0.20
 #DISTANCE_THRESHOLD = 0.34
-DISTANCE = masi_distance
+DISTANCE = jaccard_distance
 
 def clean_string(string):
   #remove acentos e transforma para maiusculas
@@ -25,7 +25,7 @@ def clean_string(string):
   
   return clean_string.strip()
 
-data_file = open('tags_1000.txt', 'rb')
+data_file = open('tags2.txt', 'rb')
 data = data_file.readlines()
 
 fdist = nltk.FreqDist()
@@ -97,7 +97,7 @@ for cluster in clusters:
   for idx, music in enumerate(musics):
     for tag in music:
       if tag in cluster:
-	clustered_musics[tuple(cluster)].append('Music nº %s' % (idx))
+	clustered_musics[tuple(cluster)].append('%s' % (idx))
 
 
 
@@ -112,7 +112,7 @@ for tags in clustered_musics:
     descriptive_terms_heading = 'Descriptive Terms: ' + ', '.join(descriptive_terms)
   print descriptive_terms_heading
   print '-' * max(len(descriptive_terms_heading), len(common_tags_heading))
-  print '\n'.join(clustered_musics[tags])
+  print ','.join(clustered_musics[tags])
   print
 
 #calculate distance between musics
