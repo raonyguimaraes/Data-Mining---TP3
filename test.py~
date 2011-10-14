@@ -25,3 +25,7 @@
 
 #distance = round(jaccard_distance(X, Y), 2)
 #print distance
+
+ints = ["A", "2", "HJHAS"]
+for idx, val in enumerate(ints):
+    print idx, val

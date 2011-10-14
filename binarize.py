@@ -15,7 +15,7 @@ def clean_string(string):
   
   return clean_string.strip()
 
-data_file = open('tags2.txt', 'rb')
+data_file = open('tags.txt', 'rb')
 data = data_file.readlines()
 
 #fdist = nltk.FreqDist()
@@ -35,9 +35,9 @@ for line in data:
     #fdist.inc(tag)
 
 
-print 'finished reading file'
-print str(len(all_tags))+" tags"
-print str(len(musics))+" musics"
+#print 'finished reading file'
+#print str(len(all_tags))+" tags"
+#print str(len(musics))+" musics"
 
 
 
@@ -52,8 +52,8 @@ for music in musics:
     if music not in unic_musics:
       unic_musics.append(music)
 
-print str(len(unic_tags))+" unique tags"
-print str(len(unic_musics))+" unique musics"
+#print str(len(unic_tags))+" unique tags"
+#print str(len(unic_musics))+" unique musics"
 
 print ",".join(unic_tags)
 
@@ -67,6 +67,4 @@ for music in unic_musics:
       music_string.append("0")
   #print "Music has "+str(len(music_string))+" tags"
   string = ",".join(music_string) 
-  print string #"%s,%s" % (count, string)   
-    
-  
+  print string #"%s,%s" % (count, string)

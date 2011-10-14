@@ -4,15 +4,23 @@
 
 import unicodedata
 import re
-
+import random
 import nltk
 from prettytable import PrettyTable
 
 from nltk.metrics.distance import jaccard_distance, masi_distance
 
-DISTANCE_THRESHOLD = 0.20
+# Import the goods
+from cluster import HierarchicalClustering
+
+DISTANCE_THRESHOLD = 0.34
 #DISTANCE_THRESHOLD = 0.34
-DISTANCE = masi_distance
+DISTANCE = jaccard_distance
+SAMPLE_SIZE = 100
+
+# Define a scoring function
+def score(tag1, tag2):
+  return DISTANCE(set(tag1.split()), set(tag2.split()))
 
 def clean_string(string):
   #remove acentos e transforma para maiusculas
@@ -25,7 +33,7 @@ def clean_string(string):
   
   return clean_string.strip()
 
-data_file = open('tags2.txt', 'rb')
+data_file = open('tags_1000.txt', 'rb')
 data = data_file.readlines()
 
 fdist = nltk.FreqDist()
@@ -73,19 +81,28 @@ print "Clustering Tags"
 clusters = {}
 for tag1 in all_tags:
   clusters[tag1] = []
-  for tag2 in all_tags:
+  for sample in range(SAMPLE_SIZE):
+    tag2 = all_tags[random.randint(0, len(all_tags)-1)]
+    #for tag2 in all_tags:
     if tag2 in clusters[tag1] or clusters.has_key(tag2) and tag1 in clusters[tag2]:
       continue
     distance = DISTANCE(set(tag1.split()), set(tag2.split()))
     if distance < DISTANCE_THRESHOLD:
       clusters[tag1].append(tag2)
 
-
-
-
-# Flatten out clusters
+#Flatten out clusters
 clusters = [clusters[tag] for tag in clusters if len(clusters[tag]) > 1]
 
+      
+      
+############Cluster tags using Hierarquical Cluster
+## Feed the class your data and the scoring function
+#hc = HierarchicalClustering(all_tags, score)
+## Cluster the data according to a distance threshold
+#clusters = hc.getlevel(DISTANCE_THRESHOLD)
+
+## Remove singleton clusters
+#clusters = [c for c in clusters if len(c) > 1]
 
 print "Number of clusters for tags:"+str(len(clusters))
 
