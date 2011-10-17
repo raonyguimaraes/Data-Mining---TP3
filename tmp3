@@ -1,0 +1,183 @@
+Init
+Main
+Reading file...
+Finished reading file!
+Frequency of original data..
+Objects: 105 being 105 uniques
+Categories: 979 being 709 uniques
+Calculate Distance Matrix...
+Cluster Items...
+distance: 0.001
+numero de clusters: 105
+inconsistent: 0.001
+numero de clusters: 85
+maxclust: 0.001
+numero de clusters: 1
+distance: 0.01
+numero de clusters: 105
+inconsistent: 0.01
+numero de clusters: 85
+maxclust: 0.01
+numero de clusters: 1
+distance: 0.1
+numero de clusters: 105
+inconsistent: 0.1
+numero de clusters: 85
+maxclust: 0.1
+numero de clusters: 1
+distance: 0.2
+numero de clusters: 105
+inconsistent: 0.2
+numero de clusters: 85
+maxclust: 0.2
+numero de clusters: 1
+distance: 0.3
+numero de clusters: 103
+inconsistent: 0.3
+numero de clusters: 85
+maxclust: 0.3
+numero de clusters: 1
+distance: 0.4
+numero de clusters: 102
+inconsistent: 0.4
+numero de clusters: 85
+maxclust: 0.4
+numero de clusters: 1
+distance: 0.5
+numero de clusters: 98
+inconsistent: 0.5
+numero de clusters: 85
+maxclust: 0.5
+numero de clusters: 1
+distance: 0.6
+numero de clusters: 84
+inconsistent: 0.6
+numero de clusters: 85
+maxclust: 0.6
+numero de clusters: 1
+distance: 0.7
+numero de clusters: 65
+inconsistent: 0.7
+numero de clusters: 84
+maxclust: 0.7
+numero de clusters: 1
+distance: 0.8
+numero de clusters: 33
+inconsistent: 0.8
+numero de clusters: 57
+maxclust: 0.8
+numero de clusters: 1
+distance: 0.9
+numero de clusters: 18
+inconsistent: 0.9
+numero de clusters: 54
+maxclust: 0.9
+numero de clusters: 1
+distance: 0.95
+numero de clusters: 18
+inconsistent: 0.95
+numero de clusters: 52
+maxclust: 0.95
+numero de clusters: 1
+distance: 0.99
+numero de clusters: 18
+inconsistent: 0.99
+numero de clusters: 52
+maxclust: 0.99
+numero de clusters: 1
+distance: 0.999
+numero de clusters: 18
+inconsistent: 0.999
+numero de clusters: 52
+maxclust: 0.999
+numero de clusters: 1
+distance: 0.9999
+numero de clusters: 18
+inconsistent: 0.9999
+numero de clusters: 52
+maxclust: 0.9999
+numero de clusters: 1
+distance: 1
+numero de clusters: 1
+inconsistent: 1
+numero de clusters: 52
+maxclust: 1
+numero de clusters: 1
+distance: 2
+numero de clusters: 1
+inconsistent: 2
+numero de clusters: 1
+maxclust: 2
+numero de clusters: 1
+distance: 3
+numero de clusters: 1
+inconsistent: 3
+numero de clusters: 1
+maxclust: 3
+numero de clusters: 1
+distance: 5
+numero de clusters: 1
+inconsistent: 5
+numero de clusters: 1
+maxclust: 5
+numero de clusters: 1
+distance: 10
+numero de clusters: 1
+inconsistent: 10
+numero de clusters: 1
+maxclust: 10
+numero de clusters: 1
+distance: 60
+numero de clusters: 1
+inconsistent: 60
+numero de clusters: 1
+maxclust: 60
+numero de clusters: 60
+distance: 100
+numero de clusters: 1
+inconsistent: 100
+numero de clusters: 1
+maxclust: 100
+numero de clusters: 100
+Usando treshold: 0.95
+numero de clusters: 18
+cluster sizes: [88, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Imprimindo Cluster...
+Cluster 1
+Tamanho 88
+Cluster Distance: 0.403990487376
+Items [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 56, 57, 59, 60, 61, 62, 65, 66, 67, 68, 71, 72, 73, 74, 75, 76, 77, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 93, 94, 96, 97, 98, 100, 101, 102, 103, 104]
+Cluster 2
+Tamanho 1
+Cluster 3
+Tamanho 1
+Cluster 4
+Tamanho 1
+Cluster 5
+Tamanho 1
+Cluster 6
+Tamanho 1
+Cluster 7
+Tamanho 1
+Cluster 8
+Tamanho 1
+Cluster 9
+Tamanho 1
+Cluster 10
+Tamanho 1
+Cluster 11
+Tamanho 1
+Cluster 12
+Tamanho 1
+Cluster 13
+Tamanho 1
+Cluster 14
+Tamanho 1
+Cluster 15
+Tamanho 1
+Cluster 16
+Tamanho 1
+Cluster 17
+Tamanho 1
+Cluster 18
+Tamanho 1

@@ -1,22 +1,30 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-
+import os
+import sys
+import csv
+import nltk
 import unicodedata
 import re
-
-import nltk
-from prettytable import PrettyTable
-
-from nltk.metrics.distance import jaccard_distance, masi_distance
-
-DISTANCE_THRESHOLD = 0.34
-#DISTANCE_THRESHOLD = 0.34
-DISTANCE = masi_distance
-
-# Import the goods
+import json
+import shutil
+import webbrowser
+from nltk.metrics.distance import masi_distance
 from cluster import HierarchicalClustering
 
+HTML_TEMPLATE = '../web_code/protovis/linkedin_tree.html'
+
+# Another option for a template
+HTML_TEMPLATE = '../web_code/protovis/linkedin_dendogram.html'
+
+OUT = os.path.basename(HTML_TEMPLATE)
+
+
+
+DISTANCE_THRESHOLD = 0.34
+
+DISTANCE = masi_distance
 
 def clean_string(string):
   #remove acentos e transforma para maiusculas
@@ -29,7 +37,7 @@ def clean_string(string):
   
   return clean_string.strip()
 
-data_file = open('tags_1000.txt', 'rb')
+data_file = open('tags2.txt', 'rb')
 data = data_file.readlines()
 
 fdist = nltk.FreqDist()
@@ -38,7 +46,11 @@ all_tags = []
 musics = []
 for line in data:
   line = clean_string(line).split(',')
-  musics.append(line)
+  new_music_line = []
+  for music_tag in line:
+    if music_tag not in new_music_line:
+      new_music_line.append(music_tag)
+  musics.append(new_music_line)
   tags = line
   for tag in tags:
     all_tags.append(tag)
@@ -48,67 +60,48 @@ print 'finished reading file'
 print str(len(all_tags))+" tags"
 print str(len(musics))+" musics"
 
-#frequency of tag
-
-#top50_frequency = fdist.values()[:50]
-#top50 = fdist.keys()[:50]
-#print "Most 50 frequent terms"
-#print top50
-#print top50_frequency
-
-
-
-#using pretty table
-#pt = PrettyTable(fields=['Tag', 'Freq'])
-#pt.set_field_align('Tag', 'l')
-#[pt.add_row([tag, freq]) for (tag, freq) in fdist.items() if freq > 1]
-##[:50]
-#pt.printt()
-
-#sort_list = fdist.keys()
-#print sort_list
-
-
-print "Clustering Musics"      
+######## Begin: HAC ########
 
 # Define a scoring function
-def score(music1, music2):
-  return DISTANCE(set(music1), set(music2))
+
+
+def score(title1, title2):
+    return DISTANCE(set(title1.split()), set(title2.split()))
+
 
 # Feed the class your data and the scoring function
-hc = HierarchicalClustering(musics, score)
+
+hc = HierarchicalClustering(all_tags, score)
+
 # Cluster the data according to a distance threshold
+
 clusters = hc.getlevel(DISTANCE_THRESHOLD)
 
 # Remove singleton clusters
-clusters = [c for c in clusters if len(c) > 1]
-
+# clusters = [c for c in clusters if len(c) > 1]
 
 ######## End: HAC ########
 
-# Round up musics who are in these clusters and group them together
+# Round up contacts who are in these clusters and group them together
 
-clustered_musics = {}
-
+clustered_contacts = {}
 for cluster in clusters:
-  clustered_musics[tuple(cluster)] = []
-  for idx, music in enumerate(musics):
-    for tag in music:
-      if tag in cluster:
-	clustered_musics[tuple(cluster)].append('%s' % (idx))
-	
-	
+    clustered_contacts[tuple(cluster)] = []
+    for contact in contacts:
+        for title in contact['Job Titles']:
+            if title in cluster:
+                clustered_contacts[tuple(cluster)].append('%s %s.'
+                        % (contact['First Name'], contact['Last Name'][0]))
 
 json_output = {}
-for tags in clustered_musics:
+for titles in clustered_contacts:
 
-    descriptive_terms = set(tags[0].split())
-    for title in tags:
+    descriptive_terms = set(titles[0].split())
+    for title in titles:
         descriptive_terms.intersection_update(set(title.split()))
 
     json_output[', '.join(descriptive_terms)[:30]] = dict([(c, None) for c in
-            clustered_musics[tags]])
-
+            clustered_contacts[titles]])
 
 if not os.path.isdir('out'):
     os.mkdir('out')

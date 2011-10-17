@@ -3,26 +3,613 @@ Main
 Reading file...
 Finished reading file!
 Frequency of original data..
-Objects: 105 being 105 uniques
-Categories: 979 being 709 uniques
-Frequency of sample data...
-Objects: 68 being 68 uniques
-Categories: 615 being 472 uniques
+Objects: 191538 being 167753 uniques
+Categories: 1790216 being 115730 uniques
+Objects: 1000 being 984 uniques
+Categories: 9570 being 4450 uniques
 Calculate Distance Matrix...
 Cluster Items...
-treshold: 0.01
-numero de clusters: 68
-treshold: 0.03
-numero de clusters: 68
-treshold: 0.05
-numero de clusters: 68
-treshold: 0.1
-numero de clusters: 68
-treshold: 0.8
-numero de clusters: 68
-treshold: 0.9
-numero de clusters: 67
-treshold: 0.99
-numero de clusters: 67
+distance: 0.001
+numero de clusters: 984
+maxclust: 0.001
+numero de clusters: 1
+distance: 0.01
+numero de clusters: 984
+maxclust: 0.01
+numero de clusters: 1
+distance: 0.1
+numero de clusters: 971
+maxclust: 0.1
+numero de clusters: 1
+distance: 0.2
+numero de clusters: 930
+maxclust: 0.2
+numero de clusters: 1
+distance: 0.3
+numero de clusters: 857
+maxclust: 0.3
+numero de clusters: 1
+distance: 0.4
+numero de clusters: 680
+maxclust: 0.4
+numero de clusters: 1
+distance: 0.5
+numero de clusters: 486
+maxclust: 0.5
+numero de clusters: 1
+distance: 0.6
+numero de clusters: 289
+maxclust: 0.6
+numero de clusters: 1
+distance: 0.7
+numero de clusters: 164
+maxclust: 0.7
+numero de clusters: 1
+distance: 0.8
+numero de clusters: 132
+maxclust: 0.8
+numero de clusters: 1
+distance: 0.9
+numero de clusters: 128
+maxclust: 0.9
+numero de clusters: 1
+distance: 0.95
+numero de clusters: 128
+maxclust: 0.95
+numero de clusters: 1
+distance: 0.99
+numero de clusters: 128
+maxclust: 0.99
+numero de clusters: 1
+distance: 0.999
+numero de clusters: 128
+maxclust: 0.999
+numero de clusters: 1
+distance: 0.9999
+numero de clusters: 128
+maxclust: 0.9999
+numero de clusters: 1
+distance: 1
+numero de clusters: 1
+maxclust: 1
+numero de clusters: 1
+distance: 2
+numero de clusters: 1
+maxclust: 2
+numero de clusters: 1
+distance: 3
+numero de clusters: 1
+maxclust: 3
+numero de clusters: 1
+distance: 5
+numero de clusters: 1
+maxclust: 5
+numero de clusters: 1
+distance: 10
+numero de clusters: 1
+maxclust: 10
+numero de clusters: 1
+distance: 60
+numero de clusters: 1
+maxclust: 60
+numero de clusters: 1
+distance: 100
+numero de clusters: 1
+maxclust: 100
+numero de clusters: 1
 treshold: 0.95
-numero de clusters: 67
+numero de clusters: 128
+cluster sizes: [872, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Imprimindo Cluster...
+Cluster 1
+Items [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 84, 85, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 103, 104, 105, 106, 107, 108, 109, 110, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 149, 150, 151, 152, 153, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 168, 170, 172, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 217, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 295, 296, 297, 298, 300, 302, 303, 304, 305, 306, 307, 308, 309, 311, 312, 313, 314, 315, 316, 317, 319, 320, 321, 322, 323, 324, 325, 326, 327, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 433, 435, 436, 437, 438, 439, 441, 442, 443, 444, 445, 446, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 477, 478, 479, 481, 482, 483, 484, 485, 486, 487, 489, 490, 492, 493, 494, 495, 498, 500, 501, 502, 503, 504, 506, 507, 509, 510, 512, 514, 515, 516, 519, 520, 522, 523, 525, 526, 527, 528, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 549, 550, 551, 552, 553, 554, 555, 556, 558, 560, 561, 563, 565, 567, 568, 569, 570, 571, 574, 575, 576, 577, 578, 579, 580, 582, 583, 584, 585, 586, 587, 589, 591, 592, 593, 594, 595, 597, 598, 599, 600, 601, 602, 603, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 623, 624, 625, 626, 627, 628, 629, 630, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 646, 647, 648, 649, 650, 651, 652, 654, 655, 656, 657, 658, 659, 660, 661, 662, 664, 665, 666, 668, 669, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 696, 697, 699, 700, 701, 702, 703, 704, 705, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 752, 753, 755, 756, 757, 758, 759, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 792, 793, 794, 795, 796, 797, 798, 799, 800, 802, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 817, 818, 819, 820, 821, 823, 824, 826, 827, 828, 829, 830, 831, 832, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 863, 864, 865, 866, 867, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 882, 883, 884, 885, 886, 888, 889, 890, 891, 893, 895, 897, 898, 899, 900, 901, 902, 903, 904, 905, 906, 907, 908, 909, 910, 912, 913, 915, 916, 917, 918, 919, 920, 922, 923, 924, 925, 927, 928, 929, 930, 931, 932, 933, 934, 935, 936, 937, 939, 940, 941, 942, 943, 944, 945, 946, 948, 949, 950, 951, 952, 953, 954, 955, 957, 959, 960, 961, 962, 963, 965, 966, 967, 968, 969, 970, 971, 972, 973, 974, 975, 976, 977, 978, 979, 980, 981, 982, 983, 984, 985, 987, 992, 993, 995, 996, 997, 998]
+Tamanho 872
+Cluster Distance: 3.40121062255
+Cluster 2
+Items [418, 566]
+Tamanho 2
+Cluster Distance: 0.223662572797
+Cluster 3
+Items [999]
+Tamanho 1
+Cluster Distance: 0
+Cluster 4
+Items [994]
+Tamanho 1
+Cluster Distance: 0
+Cluster 5
+Items [991]
+Tamanho 1
+Cluster Distance: 0
+Cluster 6
+Items [990]
+Tamanho 1
+Cluster Distance: 0
+Cluster 7
+Items [989]
+Tamanho 1
+Cluster Distance: 0
+Cluster 8
+Items [988]
+Tamanho 1
+Cluster Distance: 0
+Cluster 9
+Items [986]
+Tamanho 1
+Cluster Distance: 0
+Cluster 10
+Items [964]
+Tamanho 1
+Cluster Distance: 0
+Cluster 11
+Items [958]
+Tamanho 1
+Cluster Distance: 0
+Cluster 12
+Items [956]
+Tamanho 1
+Cluster Distance: 0
+Cluster 13
+Items [947]
+Tamanho 1
+Cluster Distance: 0
+Cluster 14
+Items [938]
+Tamanho 1
+Cluster Distance: 0
+Cluster 15
+Items [926]
+Tamanho 1
+Cluster Distance: 0
+Cluster 16
+Items [921]
+Tamanho 1
+Cluster Distance: 0
+Cluster 17
+Items [914]
+Tamanho 1
+Cluster Distance: 0
+Cluster 18
+Items [911]
+Tamanho 1
+Cluster Distance: 0
+Cluster 19
+Items [896]
+Tamanho 1
+Cluster Distance: 0
+Cluster 20
+Items [894]
+Tamanho 1
+Cluster Distance: 0
+Cluster 21
+Items [892]
+Tamanho 1
+Cluster Distance: 0
+Cluster 22
+Items [887]
+Tamanho 1
+Cluster Distance: 0
+Cluster 23
+Items [881]
+Tamanho 1
+Cluster Distance: 0
+Cluster 24
+Items [870]
+Tamanho 1
+Cluster Distance: 0
+Cluster 25
+Items [869]
+Tamanho 1
+Cluster Distance: 0
+Cluster 26
+Items [868]
+Tamanho 1
+Cluster Distance: 0
+Cluster 27
+Items [862]
+Tamanho 1
+Cluster Distance: 0
+Cluster 28
+Items [849]
+Tamanho 1
+Cluster Distance: 0
+Cluster 29
+Items [833]
+Tamanho 1
+Cluster Distance: 0
+Cluster 30
+Items [825]
+Tamanho 1
+Cluster Distance: 0
+Cluster 31
+Items [822]
+Tamanho 1
+Cluster Distance: 0
+Cluster 32
+Items [816]
+Tamanho 1
+Cluster Distance: 0
+Cluster 33
+Items [803]
+Tamanho 1
+Cluster Distance: 0
+Cluster 34
+Items [801]
+Tamanho 1
+Cluster Distance: 0
+Cluster 35
+Items [791]
+Tamanho 1
+Cluster Distance: 0
+Cluster 36
+Items [775]
+Tamanho 1
+Cluster Distance: 0
+Cluster 37
+Items [760]
+Tamanho 1
+Cluster Distance: 0
+Cluster 38
+Items [754]
+Tamanho 1
+Cluster Distance: 0
+Cluster 39
+Items [751]
+Tamanho 1
+Cluster Distance: 0
+Cluster 40
+Items [739]
+Tamanho 1
+Cluster Distance: 0
+Cluster 41
+Items [719]
+Tamanho 1
+Cluster Distance: 0
+Cluster 42
+Items [706]
+Tamanho 1
+Cluster Distance: 0
+Cluster 43
+Items [698]
+Tamanho 1
+Cluster Distance: 0
+Cluster 44
+Items [695]
+Tamanho 1
+Cluster Distance: 0
+Cluster 45
+Items [694]
+Tamanho 1
+Cluster Distance: 0
+Cluster 46
+Items [670]
+Tamanho 1
+Cluster Distance: 0
+Cluster 47
+Items [667]
+Tamanho 1
+Cluster Distance: 0
+Cluster 48
+Items [663]
+Tamanho 1
+Cluster Distance: 0
+Cluster 49
+Items [653]
+Tamanho 1
+Cluster Distance: 0
+Cluster 50
+Items [645]
+Tamanho 1
+Cluster Distance: 0
+Cluster 51
+Items [631]
+Tamanho 1
+Cluster Distance: 0
+Cluster 52
+Items [622]
+Tamanho 1
+Cluster Distance: 0
+Cluster 53
+Items [621]
+Tamanho 1
+Cluster Distance: 0
+Cluster 54
+Items [605]
+Tamanho 1
+Cluster Distance: 0
+Cluster 55
+Items [604]
+Tamanho 1
+Cluster Distance: 0
+Cluster 56
+Items [596]
+Tamanho 1
+Cluster Distance: 0
+Cluster 57
+Items [590]
+Tamanho 1
+Cluster Distance: 0
+Cluster 58
+Items [588]
+Tamanho 1
+Cluster Distance: 0
+Cluster 59
+Items [581]
+Tamanho 1
+Cluster Distance: 0
+Cluster 60
+Items [573]
+Tamanho 1
+Cluster Distance: 0
+Cluster 61
+Items [572]
+Tamanho 1
+Cluster Distance: 0
+Cluster 62
+Items [564]
+Tamanho 1
+Cluster Distance: 0
+Cluster 63
+Items [562]
+Tamanho 1
+Cluster Distance: 0
+Cluster 64
+Items [559]
+Tamanho 1
+Cluster Distance: 0
+Cluster 65
+Items [557]
+Tamanho 1
+Cluster Distance: 0
+Cluster 66
+Items [548]
+Tamanho 1
+Cluster Distance: 0
+Cluster 67
+Items [529]
+Tamanho 1
+Cluster Distance: 0
+Cluster 68
+Items [524]
+Tamanho 1
+Cluster Distance: 0
+Cluster 69
+Items [521]
+Tamanho 1
+Cluster Distance: 0
+Cluster 70
+Items [518]
+Tamanho 1
+Cluster Distance: 0
+Cluster 71
+Items [517]
+Tamanho 1
+Cluster Distance: 0
+Cluster 72
+Items [513]
+Tamanho 1
+Cluster Distance: 0
+Cluster 73
+Items [511]
+Tamanho 1
+Cluster Distance: 0
+Cluster 74
+Items [508]
+Tamanho 1
+Cluster Distance: 0
+Cluster 75
+Items [505]
+Tamanho 1
+Cluster Distance: 0
+Cluster 76
+Items [499]
+Tamanho 1
+Cluster Distance: 0
+Cluster 77
+Items [497]
+Tamanho 1
+Cluster Distance: 0
+Cluster 78
+Items [496]
+Tamanho 1
+Cluster Distance: 0
+Cluster 79
+Items [491]
+Tamanho 1
+Cluster Distance: 0
+Cluster 80
+Items [488]
+Tamanho 1
+Cluster Distance: 0
+Cluster 81
+Items [480]
+Tamanho 1
+Cluster Distance: 0
+Cluster 82
+Items [476]
+Tamanho 1
+Cluster Distance: 0
+Cluster 83
+Items [463]
+Tamanho 1
+Cluster Distance: 0
+Cluster 84
+Items [447]
+Tamanho 1
+Cluster Distance: 0
+Cluster 85
+Items [440]
+Tamanho 1
+Cluster Distance: 0
+Cluster 86
+Items [434]
+Tamanho 1
+Cluster Distance: 0
+Cluster 87
+Items [432]
+Tamanho 1
+Cluster Distance: 0
+Cluster 88
+Items [407]
+Tamanho 1
+Cluster Distance: 0
+Cluster 89
+Items [394]
+Tamanho 1
+Cluster Distance: 0
+Cluster 90
+Items [393]
+Tamanho 1
+Cluster Distance: 0
+Cluster 91
+Items [377]
+Tamanho 1
+Cluster Distance: 0
+Cluster 92
+Items [328]
+Tamanho 1
+Cluster Distance: 0
+Cluster 93
+Items [318]
+Tamanho 1
+Cluster Distance: 0
+Cluster 94
+Items [310]
+Tamanho 1
+Cluster Distance: 0
+Cluster 95
+Items [301]
+Tamanho 1
+Cluster Distance: 0
+Cluster 96
+Items [299]
+Tamanho 1
+Cluster Distance: 0
+Cluster 97
+Items [294]
+Tamanho 1
+Cluster Distance: 0
+Cluster 98
+Items [262]
+Tamanho 1
+Cluster Distance: 0
+Cluster 99
+Items [244]
+Tamanho 1
+Cluster Distance: 0
+Cluster 100
+Items [233]
+Tamanho 1
+Cluster Distance: 0
+Cluster 101
+Items [218]
+Tamanho 1
+Cluster Distance: 0
+Cluster 102
+Items [216]
+Tamanho 1
+Cluster Distance: 0
+Cluster 103
+Items [202]
+Tamanho 1
+Cluster Distance: 0
+Cluster 104
+Items [173]
+Tamanho 1
+Cluster Distance: 0
+Cluster 105
+Items [171]
+Tamanho 1
+Cluster Distance: 0
+Cluster 106
+Items [169]
+Tamanho 1
+Cluster Distance: 0
+Cluster 107
+Items [167]
+Tamanho 1
+Cluster Distance: 0
+Cluster 108
+Items [166]
+Tamanho 1
+Cluster Distance: 0
+Cluster 109
+Items [154]
+Tamanho 1
+Cluster Distance: 0
+Cluster 110
+Items [148]
+Tamanho 1
+Cluster Distance: 0
+Cluster 111
+Items [147]
+Tamanho 1
+Cluster Distance: 0
+Cluster 112
+Items [125]
+Tamanho 1
+Cluster Distance: 0
+Cluster 113
+Items [124]
+Tamanho 1
+Cluster Distance: 0
+Cluster 114
+Items [111]
+Tamanho 1
+Cluster Distance: 0
+Cluster 115
+Items [102]
+Tamanho 1
+Cluster Distance: 0
+Cluster 116
+Items [101]
+Tamanho 1
+Cluster Distance: 0
+Cluster 117
+Items [88]
+Tamanho 1
+Cluster Distance: 0
+Cluster 118
+Items [87]
+Tamanho 1
+Cluster Distance: 0
+Cluster 119
+Items [86]
+Tamanho 1
+Cluster Distance: 0
+Cluster 120
+Items [77]
+Tamanho 1
+Cluster Distance: 0
+Cluster 121
+Items [66]
+Tamanho 1
+Cluster Distance: 0
+Cluster 122
+Items [65]
+Tamanho 1
+Cluster Distance: 0
+Cluster 123
+Items [37]
+Tamanho 1
+Cluster Distance: 0
+Cluster 124
+Items [22]
+Tamanho 1
+Cluster Distance: 0
+Cluster 125
+Items [17]
+Tamanho 1
+Cluster Distance: 0
+Cluster 126
+Items [15]
+Tamanho 1
+Cluster Distance: 0
+Cluster 127
+Items [14]
+Tamanho 1
+Cluster Distance: 0
+Cluster 128
+Items [1]
+Tamanho 1
+Cluster Distance: 0

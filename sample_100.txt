@@ -1,8 +1,3 @@
-Init
-Main
-Reading file...
-Finished reading file!
-Frequency of original data..
 hip hop,rock,hiphop,rap,cover,american,alternative rap,angry,dramatic,gangsta rap,awsome,hardcore rap,flow
 test,skate punk
 somafm,spacestation,ambient,idm,evocative,my day on the couch,mody meditative evocative,urano,usimusiki
