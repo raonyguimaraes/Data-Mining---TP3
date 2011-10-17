@@ -1,5 +1,41 @@
-Sample Size:1000
-finished reading file!
-1807257 tags
-191538 musics
-Removing Duplicates...
+Init
+Main
+Reading file...
+Finished reading file!
+Frequency of original data..
+Objects: 105 being 105 uniques
+Categories: 979 being 709 uniques
+Frequency of sample data...
+Objects: 100 being 61 uniques
+Categories: 971 being 466 uniques
+Calculate Distance Matrix...
+[[  0.00000000e+00   1.00000000e+00   1.00000000e+00 ...,   1.00000000e+00
+    1.00000000e+00   9.87798859e-01]
+ [  1.00000000e+00   0.00000000e+00   1.00000000e+00 ...,   1.00000000e+00
+    1.00000000e+00   1.00000000e+00]
+ [  1.00000000e+00   1.00000000e+00   0.00000000e+00 ...,   1.00000000e+00
+    1.00000000e+00   1.00000000e+00]
+ ..., 
+ [  1.00000000e+00   1.00000000e+00   1.00000000e+00 ...,   0.00000000e+00
+    1.00000000e+00   9.95994377e-01]
+ [  1.00000000e+00   1.00000000e+00   1.00000000e+00 ...,   1.00000000e+00
+    0.00000000e+00   9.15856125e-01]
+ [  9.87798859e-01   1.00000000e+00   1.00000000e+00 ...,   9.95994377e-01
+    9.15856125e-01  -2.22044605e-16]]
+Cluster Items...
+treshold: 0.01
+numero de clusters: 61
+treshold: 0.03
+numero de clusters: 61
+treshold: 0.05
+numero de clusters: 61
+treshold: 0.1
+numero de clusters: 61
+treshold: 0.8
+numero de clusters: 61
+treshold: 0.9
+numero de clusters: 61
+treshold: 0.99
+numero de clusters: 60
+treshold: 0.95
+numero de clusters: 61

@@ -1,52 +1,31 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from nltk.metrics.distance import jaccard_distance, masi_distance
+#Now, let's generate vectors x and y in R, do a scatter plot, fit a least-squares line, etc.:
 
+#from rpy2.robjects import r
+#from rpy2 import robjects
+#from rpy2.robjects import Formula
+#from rpy2.robjects.vectors import IntVector, FloatVector
+#from rpy2.robjects.lib import grid
+#from rpy2.robjects.packages import importr
 
-#from numpy import array
-#from nltk import cluster
-from nltk.cluster import euclidean_distance
-#vectors = [array(f) for f in [[3, 3], [1, 2], [4, 2], [4, 0]]]
-#clusterer = cluster.KMeansClusterer(2, euclidean_distance, repeats=10)
-#print clusterer.cluster(vectors, True) 
+#r('x <- rnorm(100)')  # generate x at R
+#r('y <- x + rnorm(100,sd=0.5)')  # generate y at R
+#r('plot(x,y)')  # have R plot them
+#r('lmout <- lm(y~x)')  # run the regression
+#r('print(lmout)')  # print from R
+#loclmout = r('lmout') # download lmout from R to Python
+#print loclmout  # print locally
+#print loclmout.r['coefficients']  # print one component
+#Now let's apply some R operations to some Python variables:
 
-
-# Define a scoring function
-def score(tag1, tag2):
-  return jaccard_distance(set(tag1[0]), set(tag2[0]))
-
-
-from nltk import cluster
-import numpy
-
-vectors = [numpy.array(f) for f in [[2, 1], [1, 3], [4, 7], [6, 7]]]
-#vectors = [["car", "bar"], ["bar", "car"], ["bar", "car"], ["car", "bar"]]
-#means = [[4, 3], [5, 5]]
-
-clusterer = cluster.KMeansClusterer(2, euclidean_distance) #, initial_means=means
-clusters = clusterer.cluster(vectors, True, trace=True)
-
-print 'Clustered:', vectors
-print 'As:', clusters
-print 'Means:', clusterer.means()
-print
-
-#vectors = [numpy.array(f) for f in [[3, 3], [1, 2], [4, 2], [4, 0], [2, 3], [3, 1]]]
-
-## test k-means using the euclidean distance metric, 2 means and repeat
-## clustering 10 times with random seeds
-
-#clusterer = cluster.KMeansClusterer(2, euclidean_distance, repeats=10)
-#clusters = clusterer.cluster(vectors, True)
-#print 'Clustered:', vectors
-#print 'As:', clusters
-#print 'Means:', clusterer.means()
-#print
-
-## classify a new vector
-#vector = numpy.array([3, 3])
-#print 'classify(%s):' % vector,
-#print clusterer.classify(vector)
-#print
+#u = range(10)  # set up another scatter plot, this one local
+#e = 5*[0.25,-0.25]
+#v = u[:]
+#for i in range(10): v[i] += e[i]
+#r.plot(u,v)
+#r.assign('remoteu',u)  # ship local u to R
+#r.assign('remotev',v)  # ship local v to R
+#r('plot(remoteu,remotev)')  # plot there
 

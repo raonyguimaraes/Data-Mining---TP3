@@ -1,0 +1,28 @@
+Init
+Main
+Reading file...
+Finished reading file!
+Frequency of original data..
+Objects: 105 being 105 uniques
+Categories: 979 being 709 uniques
+Frequency of sample data...
+Objects: 68 being 68 uniques
+Categories: 615 being 472 uniques
+Calculate Distance Matrix...
+Cluster Items...
+treshold: 0.01
+numero de clusters: 68
+treshold: 0.03
+numero de clusters: 68
+treshold: 0.05
+numero de clusters: 68
+treshold: 0.1
+numero de clusters: 68
+treshold: 0.8
+numero de clusters: 68
+treshold: 0.9
+numero de clusters: 67
+treshold: 0.99
+numero de clusters: 67
+treshold: 0.95
+numero de clusters: 67
